@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur mon Portfolio</h1>
+        <h1>Contact</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -21,15 +21,19 @@
 
     <main>
         <section>
-            <h2>À propos de moi</h2>
-            <p>Je suis un développeur web passionné par la création de sites modernes et interactifs.</p>
-        </section>
-        <section>
-            <h2>Mes Derniers Projets</h2>
-            <ul>
-                <li>Projet 1 - <a href="projects.html">Voir plus</a></li>
-                <li>Projet 2 - <a href="projects.html">Voir plus</a></li>
-            </ul>
+            <h2>Formulaire de Contact</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
 
